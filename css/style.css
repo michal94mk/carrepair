@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#carouselExampleCaptions {
+    width: 100%;
+    height: 100%;
+  }
+
+#contact textarea {
+    resize: none;
+}
+
+#services img {
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Przyciemnienie za pomocą koloru RGBA */
+    opacity: 0; /* Początkowo przezroczyste */
+    transition: opacity 0.3s ease; /* Efekt przejścia */
+}
+
+.card-body:hover::before {
+    opacity: 1; /* Przyciemnienie po najechaniu kursorem */
+}
+
+
+.no-radius {
+    border-radius: 0 !important;
+}
+
+.c-item {
+    height: 90vh;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* zapewnia, że obraz zostanie wypełniony do całej przestrzeni bez deformacji */
+}
+
+
+/* .carousel-inner {
+    height: 100vh;
+    margin: 0;
+} */
+
+.section-padding {
+    padding: 100px 0;
+    border: 2px;
+}
+
+/* .about-text {
+    text-align: center;
+} */
+
+
+
+/* Zmniejszamy przezroczystość przycisków karuzeli */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Kolor tła z przezroczystością */
+    //border: none; /* Usuwamy obramowanie */
+}
+
+/* Dodajemy efekt hover, który dodatkowo przyciemni przyciski po najechaniu na nie kursorem */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Przyciemniony kolor tła po najechaniu kursorem */
+}
+
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .c-item {
+        height: 50vh;
+      }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .gallery-img {
+        width: 300px;
+        height: 300px;
+
+    }
+}

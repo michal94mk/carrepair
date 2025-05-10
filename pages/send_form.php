@@ -50,18 +50,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($to, $subject, $messageBody, $headers);
         */
         
-        // Redirect to confirmation page
-        $_SESSION['form_success'] = true;
-        redirect('contact', ['success' => 1]);
+        // Check if this is an AJAX request
+        if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+            strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+            // For AJAX requests, return JSON response
+            header('Content-Type: application/json');
+            echo json_encode(['success' => true, 'message' => 'Thank you for contacting us! Your message has been sent.']);
+            exit;
+        } else {
+            // For regular requests, redirect to confirmation page
+            $_SESSION['form_success'] = true;
+            redirect('contact', ['success' => 1]);
+        }
     } else {
-        // Redirect with error message
-        $_SESSION['form_errors'] = $errors;
-        $_SESSION['form_data'] = [
-            'name' => $name,
-            'email' => $email,
-            'message' => $message
-        ];
-        redirect('contact', ['error' => 1]);
+        // Check if this is an AJAX request
+        if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+            strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+            // For AJAX requests, return JSON response with errors
+            header('Content-Type: application/json');
+            echo json_encode(['success' => false, 'errors' => $errors]);
+            exit;
+        } else {
+            // For regular requests, redirect with error message
+            $_SESSION['form_errors'] = $errors;
+            $_SESSION['form_data'] = [
+                'name' => $name,
+                'email' => $email,
+                'message' => $message
+            ];
+            redirect('contact', ['error' => 1]);
+        }
     }
 } else {
     // If someone tries to access this page without submitting the form

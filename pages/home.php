@@ -284,18 +284,20 @@
 </section>
 <section id="cta" class="section-padding bg-primary text-white">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0">
-                <h2 class="mb-2">Need professional car repair?</h2>
-                <p class="mb-0">Contact us today and schedule an appointment at our workshop!</p>
+        <div class="row align-items-center gy-4">
+            <div class="col-lg-8 col-md-7">
+                <h2 class="mb-2 fs-1 fw-bold">Need professional car repair?</h2>
+                <p class="mb-0 fs-5">Contact us today and schedule an appointment at our workshop!</p>
             </div>
-            <div class="col-lg-4 text-lg-end">
-                <a href="tel:+48123456789" class="btn btn-light btn-lg me-2 mb-2 mb-md-0">
-                    <i class="fas fa-phone me-2"></i>+48 123 456 789
-                </a>
-                <a href="<?php echo url('contact'); ?>" class="btn btn-outline-light btn-lg">
-                    <i class="fas fa-envelope me-2"></i>Contact
-                </a>
+            <div class="col-lg-4 col-md-5 text-center text-md-end">
+                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-end gap-3">
+                    <a href="tel:+48123456789" class="btn btn-light btn-lg fw-bold px-4 py-3">
+                        <i class="fas fa-phone me-2"></i>+48 123 456 789
+                    </a>
+                    <a href="<?php echo url('contact'); ?>" class="btn btn-outline-light btn-lg fw-bold px-4 py-3">
+                        <i class="fas fa-envelope me-2"></i>Contact
+                    </a>
+                </div>
             </div>
         </div>
     </div>

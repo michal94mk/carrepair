@@ -17,6 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
         return new bootstrap.Popover(popoverTriggerEl);
     });
     
+    // Mobile Menu Toggle - add collapsed class when menu is closed
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    // Add collapsed class by default
+    if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+        navbarToggler.classList.add('collapsed');
+    }
+    
+    // Listen for Bootstrap's collapse events to add/remove collapsed class
+    if (navbarCollapse) {
+        navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+            if (navbarToggler) {
+                navbarToggler.classList.add('collapsed');
+            }
+        });
+        
+        navbarCollapse.addEventListener('shown.bs.collapse', function () {
+            if (navbarToggler) {
+                navbarToggler.classList.remove('collapsed');
+            }
+        });
+    }
+    
     // Automatic alert hiding after 5 seconds
     setTimeout(function() {
         var alerts = document.querySelectorAll('.alert.alert-success, .alert.alert-info');

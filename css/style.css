@@ -147,6 +147,54 @@
     .navbar-brand {
         font-size: 1.2rem;
     }
+
+    .carousel-caption {
+        padding: 1rem;
+        bottom: 10%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        padding: 1rem;
+        margin-top: 20px;
+        transform: translateY(0);
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .services .card {
+        margin-bottom: 2rem;
+    }
+
+    .gallery-img img {
+        height: 200px;
+    }
+
+    .form-control,
+    #contact .form-control {
+        width: 100%;
+    }
+    
+    #contact textarea.form-control {
+        min-height: 120px;
+    }
+
+    .map-container {
+        min-height: 250px;
+    }
+
+    .map-container iframe {
+        min-height: 250px;
+    }
 }
 
 body {
@@ -492,30 +540,9 @@ body {
     background-color: transparent;
 }
 
-#contact .card {
-    border-radius: 15px !important;
-    background: white;
-    border: none;
+#contact .contact-wrapper {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    height: 500px;
-    margin: 0 15px;
-}
-
-#contact .row {
-    margin: 0 -15px;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-#contact .card-body {
-    padding: 1.5rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 15px;
 }
 
 #contact .form-control {
@@ -605,12 +632,14 @@ body {
 .map-container {
     position: relative;
     height: 100%;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .map-container iframe {
     border: none !important;
     outline: none !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Social Links */
@@ -639,60 +668,14 @@ body {
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .carousel-caption {
-        padding: 1rem;
-        bottom: 10%;
-    }
-
-    .carousel-caption h5 {
-        font-size: 1.8rem;
-    }
-
-    .carousel-caption p {
-        font-size: 1rem;
-    }
-
-    .about-text {
-        padding: 1rem;
-        margin-top: 20px;
-        transform: translateY(0);
-    }
-
-    .about-text h1 {
-        font-size: 2rem;
-    }
-
-    .services .card {
-        margin-bottom: 2rem;
-    }
-
-    .gallery-img img {
-        height: 200px;
-    }
-
-    .form-control,
-    #contact .form-control {
-        width: 100%;
-        height: 300px;
-    }
-
-    #contact .card {
-        width: 100%;
+@media screen and (max-width: 991px) {
+    #contact .map-container,
+    #contact .contact-form {
         height: auto;
-        min-height: 400px;
-        max-width: 500px;
-        margin: 0 0 30px 0;
     }
-
-    #contact .row {
-        margin: 0;
-        gap: 30px;
-    }
-
-    #contact iframe,
-    .map-container {
-        min-height: 250px;
+    
+    .map-container iframe {
+        min-height: 300px;
     }
 }
 

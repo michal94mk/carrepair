@@ -294,19 +294,15 @@
             <h1 class="section-title">Contact Us</h1>
             <p class="text-muted">Get in touch with us for any questions or to schedule a service</p>
         </div>
-        <div class="row justify-content-center g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body p-0 m-0 h-100 d-flex">
-                        <div class="map-container h-100 w-100">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163734.68467048665!2d19.817882087392037!3d50.046633151414955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1715225104694!5m2!1spl!2spl" width="100%" height="100%" style="border:0; display: block; margin: 0; padding: 0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+        <div class="contact-wrapper bg-light p-4 rounded shadow">
+            <div class="row g-4">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="map-container h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163734.68467048665!2d19.817882087392037!3d50.046633151414955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1715225104694!5m2!1spl!2spl" width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
+                <div class="col-lg-6">
+                    <div class="contact-form h-100">
                         <form action="<?php echo url('send_form'); ?>" method="post">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Your Name</label>

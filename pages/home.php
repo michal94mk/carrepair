@@ -91,7 +91,7 @@
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
-                <a href="<?php echo url('services'); ?>" class="card h-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <div class="text-center mb-4">
                             <i class="fas fa-tools fa-3x text-primary mb-3"></i>
@@ -100,10 +100,10 @@
                         <img src="images/test1.jpg" alt="Mechanical Repairs" class="img-fluid mb-4">
                         <p class="card-text">Fault diagnosis, engine repairs, gearbox repairs, suspension, brake systems, steering systems.</p>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <a href="<?php echo url('services'); ?>" class="card h-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <div class="text-center mb-4">
                             <i class="fas fa-car fa-3x text-primary mb-3"></i>
@@ -112,10 +112,10 @@
                         <img src="images/test1.jpg" alt="Maintenance and Servicing" class="img-fluid mb-4">
                         <p class="card-text">Regular maintenance and servicing of vehicles and machinery, including oil changes, filter replacements, checking and adjusting mechanical systems.</p>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <a href="<?php echo url('services'); ?>" class="card h-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <div class="text-center mb-4">
                             <i class="fas fa-wrench fa-3x text-primary mb-3"></i>
@@ -124,7 +124,7 @@
                         <img src="images/test1.jpg" alt="Technical Advice" class="img-fluid mb-4">
                         <p class="card-text">Providing customers with technical advice on maintenance, repairs, upgrades, and optimizing the operation of their vehicles and machinery.</p>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -139,33 +139,150 @@
     <div class="container-fluid px-0">
         <div class="row g-0">
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 1">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
-                </a>
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
             </div>
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 2">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
-                </a>
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
             </div>
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 3">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
-                </a>
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
             </div>
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 4">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
-                </a>
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
             </div>
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 5">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
-                </a>
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
             </div>
             <div class="col-lg-2 col-md-4 gallery-img">
-                <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop photo 6">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="section-title">Customer Testimonials</h1>
+            <p class="text-muted">What our clients say about us</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-img mb-4">
+                                    <img src="images/person1.jpg" alt="Client" class="rounded-circle" width="100" height="100">
+                                </div>
+                                <div class="testimonial-text">
+                                    <h5>John Smith</h5>
+                                    <p class="text-muted">Audi A4 Owner</p>
+                                    <p class="mb-0"><i class="fas fa-quote-left me-2"></i>Professional service and quick repair. My car works like new. I will definitely return for my next inspection.<i class="fas fa-quote-right ms-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-img mb-4">
+                                    <img src="images/person2.jpg" alt="Client" class="rounded-circle" width="100" height="100">
+                                </div>
+                                <div class="testimonial-text">
+                                    <h5>Anna Johnson</h5>
+                                    <p class="text-muted">Volkswagen Golf Owner</p>
+                                    <p class="mb-0"><i class="fas fa-quote-left me-2"></i>Highly recommended! Fair prices and honest information about the condition of my car. No pressure for unnecessary repairs.<i class="fas fa-quote-right ms-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-img mb-4">
+                                    <img src="images/person3.jpg" alt="Client" class="rounded-circle" width="100" height="100">
+                                </div>
+                                <div class="testimonial-text">
+                                    <h5>Peter Williams</h5>
+                                    <p class="text-muted">Opel Astra Owner</p>
+                                    <p class="mb-0"><i class="fas fa-quote-left me-2"></i>The best service in the area. They fixed an issue that other mechanics couldn't diagnose. I recommend them to everyone.<i class="fas fa-quote-right ms-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators position-relative mt-4">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-primary" aria-current="true"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-primary"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="bg-primary"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="why-us" class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="section-title">Why Choose Us</h1>
+            <p class="text-muted">Benefits of working with our workshop</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="why-us-item text-center p-4 h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-tools fa-3x text-primary"></i>
+                    </div>
+                    <h4>Modern Equipment</h4>
+                    <p>We use the latest technologies and diagnostic tools to ensure the highest quality of services.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-us-item text-center p-4 h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-user-tie fa-3x text-primary"></i>
+                    </div>
+                    <h4>Experienced Mechanics</h4>
+                    <p>Our team consists of qualified specialists with many years of experience in the industry.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-us-item text-center p-4 h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-thumbs-up fa-3x text-primary"></i>
+                    </div>
+                    <h4>Quality Guarantee</h4>
+                    <p>We provide a warranty on all services performed and parts replaced.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-us-item text-center p-4 h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-money-bill-wave fa-3x text-primary"></i>
+                    </div>
+                    <h4>Competitive Prices</h4>
+                    <p>We offer fair and transparent pricing with no hidden costs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="cta" class="section-padding bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2 class="mb-2">Need professional car repair?</h2>
+                <p class="mb-0">Contact us today and schedule an appointment at our workshop!</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="tel:+48123456789" class="btn btn-light btn-lg me-2 mb-2 mb-md-0">
+                    <i class="fas fa-phone me-2"></i>+48 123 456 789
+                </a>
+                <a href="<?php echo url('contact'); ?>" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Contact
                 </a>
             </div>
         </div>

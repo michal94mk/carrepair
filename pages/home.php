@@ -42,35 +42,35 @@
 <section id="aboutus" class="section-padding">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
         <div class="about-img">
-          <img src="images/aboutus.jpg" alt="About Car Repair" class="img-fluid">
+          <img src="images/aboutus.jpg" alt="About Car Repair" class="img-fluid" style="max-height: 450px; width: 100%; object-fit: cover;">
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 d-flex align-items-center">
         <div class="about-text">
           <h1>About Us</h1>
           <p class="mb-4">Welcome to Car Repair! We are specialists in the field of automotive mechanics. Our experienced team and the latest technologies allow us to deliver the highest quality services that meet even the most demanding expectations. Join our family of customers who value excellence and professionalism!</p>
           <div class="row g-4 mb-4">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-6">
               <div class="d-flex align-items-center">
                 <i class="fas fa-check-circle text-primary me-2"></i>
                 <span>Professional Service</span>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-6">
               <div class="d-flex align-items-center">
                 <i class="fas fa-check-circle text-primary me-2"></i>
                 <span>Expert Team</span>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-6">
               <div class="d-flex align-items-center">
                 <i class="fas fa-check-circle text-primary me-2"></i>
                 <span>Modern Equipment</span>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-6">
               <div class="d-flex align-items-center">
                 <i class="fas fa-check-circle text-primary me-2"></i>
                 <span>Quality Guarantee</span>

@@ -137,24 +137,36 @@
         </div>
     </div>
     <div class="container-fluid px-0">
-        <div class="row g-0">
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+        <div class="row g-0" id="gallery-row">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 gallery-img">
-                <img src="images/test1.jpg" class="img-fluid" alt="Gallery workshop">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0">
+                <div style="position: relative; padding-bottom: 100%; overflow: hidden;">
+                    <img src="images/test1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gallery workshop">
+                </div>
             </div>
         </div>
     </div>

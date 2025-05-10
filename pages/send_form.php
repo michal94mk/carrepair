@@ -1,32 +1,70 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+// Loading configuration
+require_once 'config/config.php';
+require_once 'includes/functions.php';
+
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $errors = [];
     
-
-    if (empty($name) || empty($email) || empty($message)) {
-        echo "Proszę wypełnić wszystkie pola formularza.";
-        exit;
+    // Get and validate data
+    $name = isset($_POST['name']) ? trim($_POST['name']) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+    
+    // Name validation
+    if (empty($name)) {
+        $errors[] = 'Name is required';
+    } elseif (strlen($name) < 2) {
+        $errors[] = 'Name must contain at least 2 characters';
     }
-
-    $to = "michal94mk@o2.pl";
-
-    $subject = "Nowa wiadomość od $name";
-
-    $email_content = "Imię: $name\n";
-    $email_content .= "Email: $email\n";
-    $email_content .= "Wiadomość:\n$message\n";
-
-    $headers = "From: $email\n";
-    $headers .= "Reply-To: $email\n";
-
-    if (mail($to, $subject, $email_content, $headers)) {
-        echo "Twoja wiadomość została pomyślnie wysłana.";
+    
+    // Email validation
+    if (empty($email)) {
+        $errors[] = 'Email is required';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Please provide a valid email address';
+    }
+    
+    // Message validation
+    if (empty($message)) {
+        $errors[] = 'Message is required';
+    } elseif (strlen($message) < 10) {
+        $errors[] = 'Message must contain at least 10 characters';
+    }
+    
+    // If there are no errors, send the message
+    if (empty($errors)) {
+        // In a real application, here would be email sending, e.g. using mail() or PHPMailer
+        // Example (commented out because it requires proper server configuration):
+        /*
+        $to = CONTACT_EMAIL;
+        $subject = 'New message from contact form from ' . escape($name);
+        $messageBody = "Name: " . escape($name) . "\r\n";
+        $messageBody .= "Email: " . escape($email) . "\r\n\r\n";
+        $messageBody .= "Message:\r\n" . escape($message);
+        $headers = 'From: ' . escape($email) . "\r\n" .
+            'Reply-To: ' . escape($email) . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+        
+        mail($to, $subject, $messageBody, $headers);
+        */
+        
+        // Redirect to confirmation page
+        $_SESSION['form_success'] = true;
+        redirect('contact', ['success' => 1]);
     } else {
-        echo "Wystąpił błąd podczas wysyłania wiadomości. Proszę spróbować ponownie później.";
+        // Redirect with error message
+        $_SESSION['form_errors'] = $errors;
+        $_SESSION['form_data'] = [
+            'name' => $name,
+            'email' => $email,
+            'message' => $message
+        ];
+        redirect('contact', ['error' => 1]);
     }
 } else {
-    echo "Nieprawidłowe żądanie.";
+    // If someone tries to access this page without submitting the form
+    redirect('contact');
 }
 ?>

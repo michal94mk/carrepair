@@ -8,9 +8,9 @@
       </div>
       <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
         <div class="about-text text-center">
-          <h1 class="mb-4">O nas</h1>
-          <p class="mb-4">Witaj w Car Repair – twoim miejscu docelowym dla kompleksowej opieki nad samochodem! Jesteśmy dumą specjalistów w dziedzinie mechaniki samochodowej, zaangażowani w dostarczanie niezrównanej jakości usług naszym klientom. Nasza firma to owoc współpracy wyjątkowo wykwalifikowanego zespołu oraz wykorzystania najnowocześniejszych technologii w branży. Dzięki temu możemy z pewnością spełnić nawet najbardziej wyszukane oczekiwania.
-Przekonaj się o naszym zaangażowaniu w perfekcję i profesjonalizm, dołączając do grona naszych zadowolonych klientów. Tutaj nie tylko naprawiamy samochody – tworzymy trwałe relacje oparte na zaufaniu i doskonałej obsłudze. Zaufaj naszemu doświadczeniu i oddaj swój samochód w ręce ekspertów, którzy traktują go jak swój własny.</p>
+          <h1 class="mb-4">About Us</h1>
+          <p class="mb-4">Welcome to Car Repair – your destination for comprehensive car care! We are proud specialists in the field of automotive mechanics, committed to providing unmatched quality service to our customers. Our company is the result of collaboration between a highly qualified team and the use of cutting-edge technologies in the industry. Thanks to this, we can confidently meet even the most sophisticated expectations.
+Experience our commitment to perfection and professionalism by joining our group of satisfied customers. Here we don't just repair cars – we build lasting relationships based on trust and excellent service. Trust our experience and put your car in the hands of experts who treat it as their own.</p>
         </div>
       </div>
     </div>

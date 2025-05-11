@@ -210,7 +210,7 @@
     }
     .gallery-img {
       transition: all 0.5s ease;
-      height: 240px; /* Reduced fixed height for all images */
+      height: 320px; /* Further increased fixed height for all images */
       object-fit: cover;
     }
     .gallery-card:hover .gallery-img {

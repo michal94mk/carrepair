@@ -29,14 +29,14 @@
         <a href="<?php echo url('gallery'); ?>" class="btn btn-primary btn-lg">View Gallery</a>
       </div>
     </div>
-    <button class="carousel-control-prev h-100 c-item" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next h-100 c-item" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev h-100 c-item" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="background: linear-gradient(to right, rgba(0,0,0,0.5), transparent); width: 15%;">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5);"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next h-100 c-item" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="background: linear-gradient(to left, rgba(0,0,0,0.5), transparent); width: 15%;">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5);"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
 <section id="aboutus" class="py-5">

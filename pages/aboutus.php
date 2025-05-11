@@ -20,8 +20,8 @@
           <img src="images/aboutus.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
           <div class="position-absolute top-0 start-0 translate-middle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 130px; height: 130px;">
             <div class="text-center">
-              <h3 class="fw-bold mb-0">15+</h3>
-              <p class="mb-0 small" style="font-size: 11px;">Years Experience</p>
+              <h3 class="fw-bold mb-0" style="font-size: 1.8rem;">15</h3>
+              <p class="mb-0 small" style="font-size: 11.5px; line-height: 1.1;">Years of<br>Experience</p>
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@
 
 /* Carousel Full Height */
 .carousel.slide .c-item {
-    height: calc(100vh - 76px); /* Adjusted for navbar height */
-    min-height: 500px; /* Ensure minimum height on smaller screens */
+    height: calc(100vh - 58px); /* Further adjusted for navbar height to maximize space */
+    min-height: 540px; /* Ensure minimum height on smaller screens */
 }
 
 .carousel.slide .c-img {

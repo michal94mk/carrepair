@@ -170,9 +170,6 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="testimonial-item text-center p-5">
-                                <div class="testimonial-img mb-4">
-                                    <img src="images/person1.jpg" alt="Client" class="rounded-circle shadow-sm" width="100" height="100">
-                                </div>
                                 <div class="testimonial-text">
                                     <h5>John Smith</h5>
                                     <p class="text-muted">Audi A4 Owner</p>
@@ -182,9 +179,6 @@
                         </div>
                         <div class="carousel-item">
                             <div class="testimonial-item text-center p-5">
-                                <div class="testimonial-img mb-4">
-                                    <img src="images/person2.jpg" alt="Client" class="rounded-circle shadow-sm" width="100" height="100">
-                                </div>
                                 <div class="testimonial-text">
                                     <h5>Anna Johnson</h5>
                                     <p class="text-muted">Volkswagen Golf Owner</p>
@@ -194,9 +188,6 @@
                         </div>
                         <div class="carousel-item">
                             <div class="testimonial-item text-center p-5">
-                                <div class="testimonial-img mb-4">
-                                    <img src="images/person3.jpg" alt="Client" class="rounded-circle shadow-sm" width="100" height="100">
-                                </div>
                                 <div class="testimonial-text">
                                     <h5>Peter Williams</h5>
                                     <p class="text-muted">Opel Astra Owner</p>
@@ -205,11 +196,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="background-color: rgba(0,0,0,0.3); width: 40px; height: 40px; top: 50%; transform: translateY(-50%); border-radius: 50%; margin-left: 10px;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="background-color: rgba(0,0,0,0.3); width: 40px; height: 40px; top: 50%; transform: translateY(-50%); border-radius: 50%; margin-right: 10px;">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>

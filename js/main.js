@@ -71,13 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 5000);
     
-    // Lightbox gallery activation
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'albumLabel': "Image %1 of %2"
-    });
-    
     // Smooth scrolling effect for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {

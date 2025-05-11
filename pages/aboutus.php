@@ -18,10 +18,10 @@
       <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
         <div class="position-relative">
           <img src="images/aboutus.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
-          <div class="position-absolute top-0 start-0 translate-middle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+          <div class="position-absolute top-0 start-0 translate-middle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 130px; height: 130px;">
             <div class="text-center">
               <h3 class="fw-bold mb-0">15+</h3>
-              <p class="mb-0 small">Years of Experience</p>
+              <p class="mb-0 small" style="font-size: 11px;">Years Experience</p>
             </div>
           </div>
         </div>

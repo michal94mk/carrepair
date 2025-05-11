@@ -30,7 +30,7 @@
       <!-- Gallery Item 1 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Our Workshop Area">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Workshop Area">
             <img src="images/test1.jpg" alt="Workshop Area" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Workshop Area</h5>
@@ -43,7 +43,7 @@
       <!-- Gallery Item 2 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Engine Overhaul">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Engine Overhaul">
             <img src="images/test1.jpg" alt="Engine Overhaul" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Engine Overhaul</h5>
@@ -56,7 +56,7 @@
       <!-- Gallery Item 3 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="results">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Finished Project">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Finished Project">
             <img src="images/test1.jpg" alt="Finished Project" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Finished Project</h5>
@@ -67,9 +67,9 @@
       </div>
 
       <!-- Gallery Item 4 -->
-      <div class="col-lg-8 col-md-12 gallery-item" data-category="workshop">
+      <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Workshop Panorama">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Workshop Panorama">
             <img src="images/test1.jpg" alt="Workshop Panorama" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <div class="d-flex align-items-center">
@@ -85,7 +85,7 @@
       <!-- Gallery Item 5 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Brake System Repair">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Brake System Repair">
             <img src="images/test1.jpg" alt="Brake System Repair" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Brake System Repair</h5>
@@ -98,7 +98,7 @@
       <!-- Gallery Item 6 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="results">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Paint Job">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Paint Job">
             <img src="images/test1.jpg" alt="Paint Job" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Paint Job</h5>
@@ -111,7 +111,7 @@
       <!-- Gallery Item 7 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Diagnostic Equipment">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Diagnostic Equipment">
             <img src="images/test1.jpg" alt="Diagnostic Equipment" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Diagnostic Equipment</h5>
@@ -122,9 +122,9 @@
       </div>
 
       <!-- Gallery Item 8 -->
-      <div class="col-lg-8 col-md-12 gallery-item" data-category="repairs">
+      <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-lightbox="gallery" data-title="Engine Diagnostics">
+          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Engine Diagnostics">
             <img src="images/test1.jpg" alt="Engine Diagnostics" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Engine Diagnostics</h5>
@@ -135,12 +135,49 @@
       </div>
     </div>
 
-    <!-- Load More Button -->
-    <div class="row mt-5">
-      <div class="col-12 text-center">
-        <button class="btn btn-outline-primary px-4 py-2">
-          <i class="fas fa-sync-alt me-2"></i>Load More
-        </button>
+    <!-- Bootstrap Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" style="margin-bottom: 30px; max-width: 85%;">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 10px; overflow: hidden;">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="galleryModalLabel">Image Title</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0 position-relative bg-dark">
+            <img src="" id="galleryModalImage" class="img-fluid w-100" style="max-height: 80vh; object-fit: contain;">
+            <div class="position-absolute top-50 start-0 translate-middle-y">
+              <button type="button" class="btn btn-dark btn-prev rounded-circle d-flex align-items-center justify-content-center opacity-75" style="width: 50px; height: 50px; margin-left: 15px; backdrop-filter: blur(3px);">
+                <i class="fas fa-chevron-left fa-lg"></i>
+              </button>
+            </div>
+            <div class="position-absolute top-50 end-0 translate-middle-y">
+              <button type="button" class="btn btn-dark btn-next rounded-circle d-flex align-items-center justify-content-center opacity-75" style="width: 50px; height: 50px; margin-right: 15px; backdrop-filter: blur(3px);">
+                <i class="fas fa-chevron-right fa-lg"></i>
+              </button>
+            </div>
+            <div class="position-absolute bottom-0 start-0 end-0 py-3 bg-dark bg-opacity-75" style="backdrop-filter: blur(5px);">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-4 text-start">
+                    <button type="button" class="btn btn-outline-light prev-btn">
+                      <i class="fas fa-chevron-left me-1"></i> Previous
+                    </button>
+                  </div>
+                  <div class="col-4 text-center">
+                    <div class="gallery-counter text-white">
+                      <span id="currentImageIndex" class="fs-5">1</span> / <span id="totalImages" class="fs-5">8</span>
+                    </div>
+                  </div>
+                  <div class="col-4 text-end">
+                    <button type="button" class="btn btn-outline-light next-btn">
+                      Next <i class="fas fa-chevron-right ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -173,7 +210,7 @@
     }
     .gallery-img {
       transition: all 0.5s ease;
-      height: 100%;
+      height: 240px; /* Reduced fixed height for all images */
       object-fit: cover;
     }
     .gallery-card:hover .gallery-img {
@@ -206,7 +243,7 @@
     }
   </style>
 
-  <!-- Custom JS for gallery filtering -->
+  <!-- Custom JS for gallery -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const filterButtons = document.querySelectorAll('.gallery-filter .btn');
@@ -233,6 +270,96 @@
           });
         });
       });
+
+      // Bootstrap modal gallery
+      const galleryModal = document.getElementById('galleryModal');
+      const modalImage = document.getElementById('galleryModalImage');
+      const modalTitle = document.getElementById('galleryModalLabel');
+      const prevBtn = document.querySelectorAll('.prev-btn');
+      const nextBtn = document.querySelectorAll('.next-btn');
+      const btnPrev = document.querySelector('.btn-prev');
+      const btnNext = document.querySelector('.btn-next');
+      const currentImageIndexEl = document.getElementById('currentImageIndex');
+      const totalImagesEl = document.getElementById('totalImages');
+      let currentIndex = 0;
+      const galleryLinks = document.querySelectorAll('.gallery-card a');
+
+      // Set total images count
+      if (totalImagesEl) {
+        totalImagesEl.textContent = galleryLinks.length;
+      }
+
+      // Update modal with image data
+      if (galleryModal) {
+        galleryModal.addEventListener('show.bs.modal', function(event) {
+          const link = event.relatedTarget;
+          const imgSrc = link.getAttribute('data-img');
+          const title = link.getAttribute('data-title');
+          
+          // Find current index
+          galleryLinks.forEach((item, index) => {
+            if (item === link) currentIndex = index;
+          });
+          
+          updateModalContent();
+        });
+
+        // Previous button
+        prevBtn.forEach(btn => {
+          btn.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + galleryLinks.length) % galleryLinks.length;
+            updateModalContent();
+          });
+        });
+
+        // Next button
+        nextBtn.forEach(btn => {
+          btn.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % galleryLinks.length;
+            updateModalContent();
+          });
+        });
+
+        // Direct buttons on image
+        if (btnPrev) {
+          btnPrev.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + galleryLinks.length) % galleryLinks.length;
+            updateModalContent();
+          });
+        }
+
+        if (btnNext) {
+          btnNext.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % galleryLinks.length;
+            updateModalContent();
+          });
+        }
+
+        // Keyboard navigation
+        galleryModal.addEventListener('keydown', function(e) {
+          if (e.key === 'ArrowLeft') {
+            currentIndex = (currentIndex - 1 + galleryLinks.length) % galleryLinks.length;
+            updateModalContent();
+          } else if (e.key === 'ArrowRight') {
+            currentIndex = (currentIndex + 1) % galleryLinks.length;
+            updateModalContent();
+          }
+        });
+
+        // Update modal content
+        function updateModalContent() {
+          const link = galleryLinks[currentIndex];
+          const imgSrc = link.getAttribute('data-img');
+          const title = link.getAttribute('data-title');
+          
+          modalImage.src = imgSrc;
+          modalTitle.textContent = title;
+          
+          if (currentImageIndexEl) {
+            currentImageIndexEl.textContent = currentIndex + 1;
+          }
+        }
+      }
     });
   </script>
 </section>

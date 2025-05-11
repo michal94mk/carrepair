@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* Carousel Full Height */
+.carousel.slide .c-item {
+    height: calc(100vh - 76px); /* Adjusted for navbar height */
+    min-height: 500px; /* Ensure minimum height on smaller screens */
+}
+
+.carousel.slide .c-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Base Styles */
 body {
     color: var(--text-color);

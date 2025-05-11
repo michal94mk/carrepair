@@ -130,38 +130,119 @@ function handleFormSubmit(e) {
  * @param {Array} errors - Optional array of error messages
  */
 function showFormMessage(form, type, message, errors = []) {
-    // Create alert div
+    // Create alert div - z mniejszymi odstępami
     const alertDiv = document.createElement('div');
-    alertDiv.className = `alert alert-${type} alert-dismissible fade show mt-3`;
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show mt-1`;
     alertDiv.setAttribute('role', 'alert');
     
-    // Add message
-    alertDiv.textContent = message;
+    // Dodaj zwarte style - nieco większa czcionka
+    alertDiv.style.padding = '5px 10px';
+    alertDiv.style.fontSize = '0.8rem';
+    alertDiv.style.lineHeight = '1.2';
+    alertDiv.style.width = '100%'; // Pełna szerokość
+    alertDiv.style.position = 'relative';
+    alertDiv.style.zIndex = '10';
     
-    // Add list of errors if provided
+    // Dodatkowy padding na dole dla komunikatu sukcesu
+    if (type === 'success') {
+        alertDiv.style.paddingBottom = '8px';
+    }
+    
+    // Create flex container - bez odstępów
+    const container = document.createElement('div');
+    container.className = 'd-flex align-items-start';
+    
+    // Add appropriate icon based on type - mniejsza
+    const icon = document.createElement('i');
+    
+    switch(type) {
+        case 'success':
+            icon.className = 'bi bi-check-circle-fill me-1';
+            break;
+        case 'danger':
+            icon.className = 'bi bi-exclamation-circle-fill me-1';
+            break;
+        case 'warning':
+            icon.className = 'bi bi-exclamation-triangle-fill me-1';
+            break;
+        case 'info':
+            icon.className = 'bi bi-info-circle-fill me-1';
+            break;
+        default:
+            icon.className = 'bi bi-info-circle-fill me-1';
+    }
+    
+    // Mniejsza ikona - nieco większa niż wcześniej
+    icon.style.fontSize = '0.8rem';
+    
+    // Create content container
+    const content = document.createElement('div');
+    content.className = 'flex-grow-1';
+    
+    // Add message - mniejszy
+    const messageP = document.createElement('p');
+    messageP.className = 'mb-0';
+    messageP.style.fontSize = '0.8rem';
+    messageP.style.fontWeight = 'normal';
+    messageP.textContent = message;
+    
+    // Dodatkowy margines na dole dla komunikatu sukcesu
+    if (type === 'success') {
+        messageP.style.marginBottom = '6px';
+    }
+    
+    content.appendChild(messageP);
+    
+    // Add list of errors if provided - zwarta lista
     if (errors.length > 0) {
         const ul = document.createElement('ul');
-        ul.className = 'mt-2 mb-0';
+        ul.className = 'mb-0 ps-3 mt-0';
+        ul.style.fontSize = '0.75rem';
+        ul.style.lineHeight = '1.2';
+        ul.style.paddingBottom = '8px'; // Większy padding na dole listy
         
-        errors.forEach(error => {
+        errors.forEach((error, index) => {
             const li = document.createElement('li');
             li.textContent = error;
+            // Jeśli to ostatni element, dodajemy więcej miejsca na dole
+            li.style.marginBottom = (index === errors.length - 1) ? '6px' : '2px';
             ul.appendChild(li);
         });
         
-        alertDiv.appendChild(ul);
+        content.appendChild(ul);
     }
     
-    // Add close button
+    // Assemble the alert contents
+    container.appendChild(icon);
+    container.appendChild(content);
+    alertDiv.appendChild(container);
+    
+    // Add close button - mniejszy
     const closeButton = document.createElement('button');
     closeButton.type = 'button';
     closeButton.className = 'btn-close';
+    closeButton.style.fontSize = '0.7rem';
+    closeButton.style.padding = '3px';
     closeButton.setAttribute('data-bs-dismiss', 'alert');
     closeButton.setAttribute('aria-label', 'Close');
+    
+    // Add onclick event to adjust layout when alert is closed
+    closeButton.addEventListener('click', function() {
+        adjustFormLayout();
+    });
+    
     alertDiv.appendChild(closeButton);
     
-    // Insert alert before the form
-    form.parentNode.insertBefore(alertDiv, form);
+    // Find or create the message container
+    let messageContainer = form.querySelector('#messageContainer');
+    if (!messageContainer) {
+        messageContainer = document.createElement('div');
+        messageContainer.id = 'messageContainer';
+        form.insertBefore(messageContainer, form.firstChild);
+    }
+    
+    // Insert alert into the message container
+    messageContainer.appendChild(alertDiv);
     
     // Auto-hide success messages after 5 seconds
     if (type === 'success') {
@@ -169,6 +250,9 @@ function showFormMessage(form, type, message, errors = []) {
             if (alertDiv.parentNode) {
                 const bsAlert = new bootstrap.Alert(alertDiv);
                 bsAlert.close();
+                
+                // Adjust layout after alert is closed
+                setTimeout(adjustFormLayout, 200);
             }
         }, 5000);
     }
@@ -279,4 +363,30 @@ function reinitializeScripts() {
             'albumLabel': "Image %1 of %2"
         });
     }
+}
+
+/**
+ * Function to fix form layout after alert dismissal
+ * This ensures the button returns to its proper position
+ */
+function adjustFormLayout() {
+    // Small delay to let the alert removal finish
+    setTimeout(() => {
+        const form = document.getElementById('contactForm');
+        if (form) {
+            // Force a layout recalculation by toggling a class
+            form.classList.add('layout-fix');
+            
+            // Remove the class after a tiny delay to trigger reflow
+            setTimeout(() => {
+                form.classList.remove('layout-fix');
+                
+                // Make sure the button is properly aligned
+                const buttonContainer = form.querySelector('.form-group.mt-auto');
+                if (buttonContainer) {
+                    buttonContainer.style.marginTop = 'auto !important';
+                }
+            }, 50);
+        }
+    }, 100);
 } 

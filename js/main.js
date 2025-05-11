@@ -123,4 +123,35 @@ document.addEventListener('DOMContentLoaded', function() {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+    
+    // Form message alert auto-dismiss
+    const alerts = document.querySelectorAll('#formMessages .alert');
+    alerts.forEach(function(alert) {
+        // Add animation class
+        alert.style.transition = 'opacity 0.3s ease-in-out';
+        
+        // Close button functionality
+        const closeBtn = alert.querySelector('.btn-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                alert.style.opacity = '0';
+                setTimeout(function() {
+                    alert.remove();
+                }, 300);
+            });
+        }
+        
+        // Auto-dismiss alerts after 5 seconds
+        setTimeout(function() {
+            alert.style.opacity = '0';
+            setTimeout(function() {
+                if (alert.parentNode) alert.remove();
+            }, 300);
+        }, 5000);
+    });
+    
+    // Remove URL parameters after page load
+    if (window.location.search.includes('success') || window.location.search.includes('error')) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
 });

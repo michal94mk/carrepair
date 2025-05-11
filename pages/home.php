@@ -97,7 +97,9 @@
                             <i class="fas fa-tools fa-3x text-primary mb-3"></i>
                             <h3 class="card-title">Mechanical Repairs</h3>
                         </div>
-                        <img src="images/test1.jpg" alt="Mechanical Repairs" class="img-fluid mb-4">
+                        <div class="square-img-container mb-4">
+                            <img src="images/test1.jpg" alt="Mechanical Repairs" class="img-cover">
+                        </div>
                         <p class="card-text">Fault diagnosis, engine repairs, gearbox repairs, suspension, brake systems, steering systems.</p>
                     </div>
                 </div>
@@ -109,7 +111,9 @@
                             <i class="fas fa-car fa-3x text-primary mb-3"></i>
                             <h3 class="card-title">Maintenance and Servicing</h3>
                         </div>
-                        <img src="images/test1.jpg" alt="Maintenance and Servicing" class="img-fluid mb-4">
+                        <div class="square-img-container mb-4">
+                            <img src="images/test1.jpg" alt="Maintenance and Servicing" class="img-cover">
+                        </div>
                         <p class="card-text">Regular maintenance and servicing of vehicles and machinery, including oil changes, filter replacements, checking and adjusting mechanical systems.</p>
                     </div>
                 </div>
@@ -121,7 +125,9 @@
                             <i class="fas fa-wrench fa-3x text-primary mb-3"></i>
                             <h3 class="card-title">Technical Advice</h3>
                         </div>
-                        <img src="images/test1.jpg" alt="Technical Advice" class="img-fluid mb-4">
+                        <div class="square-img-container mb-4">
+                            <img src="images/test1.jpg" alt="Technical Advice" class="img-cover">
+                        </div>
                         <p class="card-text">Providing customers with technical advice on maintenance, repairs, upgrades, and optimizing the operation of their vehicles and machinery.</p>
                     </div>
                 </div>

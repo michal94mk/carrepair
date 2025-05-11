@@ -26,8 +26,18 @@
 
     <div class="row mb-4">
       <div class="col-12 text-center">
-        <h2 class="display-4">Contact Us</h2>
+        <h2 class="display-4 fw-bold">Contact Us</h2>
         <p class="lead text-muted">We're here to help you. Please use the form below to get in touch with us.</p>
+        <div class="d-flex justify-content-center mt-3 mb-4">
+          <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+            <i class="fas fa-headset text-white fa-2x"></i>
+          </div>
+        </div>
+        <div class="divider-custom mx-auto mb-4">
+          <div class="divider-custom-line bg-primary"></div>
+          <div class="divider-custom-icon"><i class="fas fa-envelope text-primary"></i></div>
+          <div class="divider-custom-line bg-primary"></div>
+        </div>
       </div>
     </div>
     
@@ -120,6 +130,27 @@
       </div>
     </div>
   </div>
+  
+  <!-- Custom CSS for contact page -->
+  <style>
+    .divider-custom {
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .divider-custom-line {
+      width: 100%;
+      max-width: 35%;
+      height: 4px;
+      border-radius: 2px;
+    }
+    .divider-custom-icon {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+  </style>
 </section>
 
 <?php 

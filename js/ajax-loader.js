@@ -130,131 +130,190 @@ function handleFormSubmit(e) {
  * @param {Array} errors - Optional array of error messages
  */
 function showFormMessage(form, type, message, errors = []) {
-    // Create alert div - z mniejszymi odstępami
-    const alertDiv = document.createElement('div');
-    alertDiv.className = `alert alert-${type} alert-dismissible fade show mt-1`;
-    alertDiv.setAttribute('role', 'alert');
+    // Sprawdź czy jesteśmy na stronie kontaktowej
+    const isContactPage = window.location.href.includes('contact');
     
-    // Dodaj zwarte style - nieco większa czcionka
-    alertDiv.style.padding = '5px 10px';
-    alertDiv.style.fontSize = '0.8rem';
-    alertDiv.style.lineHeight = '1.2';
-    alertDiv.style.width = '100%'; // Pełna szerokość
-    alertDiv.style.position = 'relative';
-    alertDiv.style.zIndex = '10';
-    
-    // Dodatkowy padding na dole dla komunikatu sukcesu
-    if (type === 'success') {
-        alertDiv.style.paddingBottom = '8px';
-    }
-    
-    // Create flex container - bez odstępów
-    const container = document.createElement('div');
-    container.className = 'd-flex align-items-start';
-    
-    // Add appropriate icon based on type - mniejsza
-    const icon = document.createElement('i');
-    
-    switch(type) {
-        case 'success':
-            icon.className = 'bi bi-check-circle-fill me-1';
-            break;
-        case 'danger':
-            icon.className = 'bi bi-exclamation-circle-fill me-1';
-            break;
-        case 'warning':
-            icon.className = 'bi bi-exclamation-triangle-fill me-1';
-            break;
-        case 'info':
-            icon.className = 'bi bi-info-circle-fill me-1';
-            break;
-        default:
-            icon.className = 'bi bi-info-circle-fill me-1';
-    }
-    
-    // Mniejsza ikona - nieco większa niż wcześniej
-    icon.style.fontSize = '0.8rem';
-    
-    // Create content container
-    const content = document.createElement('div');
-    content.className = 'flex-grow-1';
-    
-    // Add message - mniejszy
-    const messageP = document.createElement('p');
-    messageP.className = 'mb-0';
-    messageP.style.fontSize = '0.8rem';
-    messageP.style.fontWeight = 'normal';
-    messageP.textContent = message;
-    
-    // Dodatkowy margines na dole dla komunikatu sukcesu
-    if (type === 'success') {
-        messageP.style.marginBottom = '6px';
-    }
-    
-    content.appendChild(messageP);
-    
-    // Add list of errors if provided - zwarta lista
-    if (errors.length > 0) {
-        const ul = document.createElement('ul');
-        ul.className = 'mb-0 ps-3 mt-0';
-        ul.style.fontSize = '0.75rem';
-        ul.style.lineHeight = '1.2';
-        ul.style.paddingBottom = '8px'; // Większy padding na dole listy
+    if (isContactPage) {
+        // Na stronie kontaktowej używamy kontenera fixed-position
+        let alertContainer = document.getElementById('floatingAlerts');
         
-        errors.forEach((error, index) => {
-            const li = document.createElement('li');
-            li.textContent = error;
-            // Jeśli to ostatni element, dodajemy więcej miejsca na dole
-            li.style.marginBottom = (index === errors.length - 1) ? '6px' : '2px';
-            ul.appendChild(li);
-        });
+        // Jeśli kontener nie istnieje, utwórz go
+        if (!alertContainer) {
+            alertContainer = document.createElement('div');
+            alertContainer.id = 'floatingAlerts';
+            alertContainer.className = 'position-fixed top-0 start-50 translate-middle-x pt-4 mt-4';
+            alertContainer.style.zIndex = '1200';
+            alertContainer.style.width = '90%';
+            alertContainer.style.maxWidth = '500px';
+            document.body.appendChild(alertContainer);
+        }
         
-        content.appendChild(ul);
-    }
-    
-    // Assemble the alert contents
-    container.appendChild(icon);
-    container.appendChild(content);
-    alertDiv.appendChild(container);
-    
-    // Add close button - mniejszy
-    const closeButton = document.createElement('button');
-    closeButton.type = 'button';
-    closeButton.className = 'btn-close';
-    closeButton.style.fontSize = '0.7rem';
-    closeButton.style.padding = '3px';
-    closeButton.setAttribute('data-bs-dismiss', 'alert');
-    closeButton.setAttribute('aria-label', 'Close');
-    
-    // Add onclick event to adjust layout when alert is closed
-    closeButton.addEventListener('click', function() {
-        adjustFormLayout();
-    });
-    
-    alertDiv.appendChild(closeButton);
-    
-    // Find or create the message container
-    let messageContainer = form.querySelector('#messageContainer');
-    if (!messageContainer) {
-        messageContainer = document.createElement('div');
-        messageContainer.id = 'messageContainer';
-        form.insertBefore(messageContainer, form.firstChild);
-    }
-    
-    // Insert alert into the message container
-    messageContainer.appendChild(alertDiv);
-    
-    // Auto-hide success messages after 5 seconds
-    if (type === 'success') {
-        setTimeout(() => {
-            if (alertDiv.parentNode) {
+        // Utwórz nowy alert
+        const alertDiv = document.createElement('div');
+        alertDiv.className = `alert alert-${type} alert-dismissible fade show shadow-sm`;
+        alertDiv.setAttribute('role', 'alert');
+        
+        // Dodaj style zwiększające nieprzezroczystość i poprawiające widoczność
+        alertDiv.style.opacity = '1';
+        alertDiv.style.backgroundColor = type === 'success' ? '#d4edda' : '#f8d7da';
+        alertDiv.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+        alertDiv.style.border = '1px solid ' + (type === 'success' ? '#c3e6cb' : '#f5c6cb');
+        
+        // Dodaj zawartość alertu
+        let content = `<strong>${type === 'success' ? 'Thank you!' : 'Error!'}</strong> ${message}`;
+        
+        // Dodaj listę błędów, jeśli istnieją
+        if (errors.length > 0) {
+            content += '<ul class="mb-0 mt-2">';
+            errors.forEach(error => {
+                content += `<li>${error}</li>`;
+            });
+            content += '</ul>';
+        }
+        
+        // Dodaj przycisk zamykania
+        content += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+        
+        alertDiv.innerHTML = content;
+        
+        // Dodaj alert do kontenera
+        alertContainer.appendChild(alertDiv);
+        
+        // Auto-ukrywanie po 5 sekundach (tylko dla sukcesu)
+        if (type === 'success') {
+            setTimeout(() => {
                 const bsAlert = new bootstrap.Alert(alertDiv);
                 bsAlert.close();
-                
-                // Adjust layout after alert is closed
-                setTimeout(adjustFormLayout, 200);
-            }
-        }, 5000);
+            }, 5000);
+        }
+    } else {
+        // Na innych stronach używamy standardowego kontenera alertów w formularzu
+        // Create alert div - z mniejszymi odstępami
+        const alertDiv = document.createElement('div');
+        alertDiv.className = `alert alert-${type} alert-dismissible fade show mt-1`;
+        alertDiv.setAttribute('role', 'alert');
+        
+        // Dodaj zwarte style - nieco większa czcionka
+        alertDiv.style.padding = '5px 10px';
+        alertDiv.style.fontSize = '0.8rem';
+        alertDiv.style.lineHeight = '1.2';
+        alertDiv.style.width = '100%'; // Pełna szerokość
+        alertDiv.style.position = 'relative';
+        alertDiv.style.zIndex = '10';
+        
+        // Dodatkowy padding na dole dla komunikatu sukcesu
+        if (type === 'success') {
+            alertDiv.style.paddingBottom = '8px';
+        }
+        
+        // Create flex container - bez odstępów
+        const container = document.createElement('div');
+        container.className = 'd-flex align-items-start';
+        
+        // Add appropriate icon based on type - mniejsza
+        const icon = document.createElement('i');
+        
+        switch(type) {
+            case 'success':
+                icon.className = 'bi bi-check-circle-fill me-1';
+                break;
+            case 'danger':
+                icon.className = 'bi bi-exclamation-circle-fill me-1';
+                break;
+            case 'warning':
+                icon.className = 'bi bi-exclamation-triangle-fill me-1';
+                break;
+            case 'info':
+                icon.className = 'bi bi-info-circle-fill me-1';
+                break;
+            default:
+                icon.className = 'bi bi-info-circle-fill me-1';
+        }
+        
+        // Mniejsza ikona - nieco większa niż wcześniej
+        icon.style.fontSize = '0.8rem';
+        
+        // Create content container
+        const content = document.createElement('div');
+        content.className = 'flex-grow-1';
+        
+        // Add message - mniejszy
+        const messageP = document.createElement('p');
+        messageP.className = 'mb-0';
+        messageP.style.fontSize = '0.8rem';
+        messageP.style.fontWeight = 'normal';
+        messageP.textContent = message;
+        
+        // Dodatkowy margines na dole dla komunikatu sukcesu
+        if (type === 'success') {
+            messageP.style.marginBottom = '6px';
+        }
+        
+        content.appendChild(messageP);
+        
+        // Add list of errors if provided - zwarta lista
+        if (errors.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'mb-0 ps-3 mt-0';
+            ul.style.fontSize = '0.75rem';
+            ul.style.lineHeight = '1.2';
+            ul.style.paddingBottom = '8px'; // Większy padding na dole listy
+            
+            errors.forEach((error, index) => {
+                const li = document.createElement('li');
+                li.textContent = error;
+                // Jeśli to ostatni element, dodajemy więcej miejsca na dole
+                li.style.marginBottom = (index === errors.length - 1) ? '6px' : '2px';
+                ul.appendChild(li);
+            });
+            
+            content.appendChild(ul);
+        }
+        
+        // Assemble the alert contents
+        container.appendChild(icon);
+        container.appendChild(content);
+        alertDiv.appendChild(container);
+        
+        // Add close button - mniejszy
+        const closeButton = document.createElement('button');
+        closeButton.type = 'button';
+        closeButton.className = 'btn-close';
+        closeButton.style.fontSize = '0.7rem';
+        closeButton.style.padding = '3px';
+        closeButton.setAttribute('data-bs-dismiss', 'alert');
+        closeButton.setAttribute('aria-label', 'Close');
+        
+        // Add onclick event to adjust layout when alert is closed
+        closeButton.addEventListener('click', function() {
+            adjustFormLayout();
+        });
+        
+        alertDiv.appendChild(closeButton);
+        
+        // Find or create the message container
+        let messageContainer = form.querySelector('#messageContainer');
+        if (!messageContainer) {
+            messageContainer = document.createElement('div');
+            messageContainer.id = 'messageContainer';
+            form.insertBefore(messageContainer, form.firstChild);
+        }
+        
+        // Insert alert into the message container
+        messageContainer.appendChild(alertDiv);
+        
+        // Auto-hide success messages after 5 seconds
+        if (type === 'success') {
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    const bsAlert = new bootstrap.Alert(alertDiv);
+                    bsAlert.close();
+                    
+                    // Adjust layout after alert is closed
+                    setTimeout(adjustFormLayout, 200);
+                }
+            }, 5000);
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 <section class="py-5">
   <div class="container">
     <!-- Floating message container for alerts - fixed position at the top of the viewport -->
-    <div id="floatingAlerts" class="position-fixed top-0 start-50 translate-middle-x pt-4 mt-4" style="z-index: 1200; width: 90%; max-width: 500px;">
+    <div id="floatingAlerts" class="position-fixed top-0 start-50 translate-middle-x pt-4 mt-4" style="z-index: 1050; width: 90%; max-width: 500px;">
       <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
         <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert" style="opacity: 1; background-color: #d4edda; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); border: 1px solid #c3e6cb;">
           <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you soon.
@@ -98,20 +98,20 @@
         <div class="card shadow-sm h-100">
           <div class="card-body" style="height: 500px; overflow-y: auto; display: flex; flex-direction: column;">
             <!-- Simple contact form without custom JavaScript -->
-            <form id="contactForm" action="<?php echo url('send_form'); ?>" method="post" class="d-flex flex-column flex-grow-1">
-              <div class="mb-3">
+            <form id="contactForm" action="<?php echo url('send_form'); ?>" method="post" class="d-flex flex-column" style="height: 100%;">
+              <div style="margin-bottom: 15px;">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Your name" value="<?php echo isset($_SESSION['form_data']['name']) ? $_SESSION['form_data']['name'] : ''; ?>" required>
               </div>
-              <div class="mb-3">
+              <div style="margin-bottom: 15px;">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Your email" value="<?php echo isset($_SESSION['form_data']['email']) ? $_SESSION['form_data']['email'] : ''; ?>" required>
               </div>
-              <div class="mb-3 flex-grow-1">
+              <div style="margin-bottom: 25px; flex: 1;">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control h-100" id="message" name="message" style="min-height: 140px; resize: none;" placeholder="Your message" required><?php echo isset($_SESSION['form_data']['message']) ? $_SESSION['form_data']['message'] : ''; ?></textarea>
+                <textarea class="form-control" id="message" name="message" style="height: calc(100% - 30px); min-height: 120px; resize: none;" placeholder="Your message" required><?php echo isset($_SESSION['form_data']['message']) ? $_SESSION['form_data']['message'] : ''; ?></textarea>
               </div>
-              <div>
+              <div style="margin-top: 15px; margin-bottom: 5px;">
                 <button type="submit" class="btn btn-primary w-100">Send Message</button>
               </div>
             </form>

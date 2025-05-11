@@ -96,11 +96,14 @@ section {
     border: 2px solid rgba(255, 255, 255, 0.8) !important;
     background-color: rgba(255, 255, 255, 0.2) !important;
     transition: all 0.3s ease;
+    padding: 8px !important;
+    cursor: pointer !important;
 }
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem var(--accent-color) !important;
     border-color: var(--accent-color) !important;
+    outline: none !important;
 }
 
 .navbar-toggler.collapsed:focus {
@@ -109,6 +112,23 @@ section {
 
 .navbar-toggler-icon {
     filter: brightness(2);
+    pointer-events: none;
+}
+
+/* Poprawki na ekranach mobilnych */
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 44px !important;
+        height: 38px !important;
+    }
+    
+    .navbar-toggler-icon {
+        width: 24px !important;
+        height: 24px !important;
+    }
 }
 
 /* Footer */

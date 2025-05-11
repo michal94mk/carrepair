@@ -26,6 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
         navbarToggler.classList.add('collapsed');
     }
     
+    // Prostsze podejście do obsługi menu
+    if (navbarToggler && navbarCollapse) {
+        // Usuń domyślne nasłuchiwanie Bootstrapa, aby mieć pełną kontrolę
+        navbarToggler.removeAttribute('data-bs-toggle');
+        navbarToggler.removeAttribute('data-bs-target');
+        
+        // Ręczna inicjalizacja obsługi zdarzenia kliknięcia - bez zatrzymywania propagacji
+        navbarToggler.addEventListener('click', function() {
+            // Użyj obiektu Collapse, ale bez zbędnej logiki
+            var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || 
+                            new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                            
+            // Przełącz stan
+            if (navbarCollapse.classList.contains('show')) {
+                bsCollapse.hide();
+            } else {
+                bsCollapse.show();
+            }
+        });
+    }
+    
     // Listen for Bootstrap's collapse events to add/remove collapsed class
     if (navbarCollapse) {
         navbarCollapse.addEventListener('hidden.bs.collapse', function () {

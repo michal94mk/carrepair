@@ -412,6 +412,9 @@ function reinitializeScripts() {
         popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl);
         });
+        
+        // WAŻNE: Nie inicjalizuj ponownie elementów collapse, które są używane przez menu mobilne
+        // To zapobiega potencjalnym konfliktom z obsługą menu
     }
     
     // Reinitialize Lightbox
@@ -422,6 +425,10 @@ function reinitializeScripts() {
             'albumLabel': "Image %1 of %2"
         });
     }
+    
+    // Nie nadpisuj obsługi przycisku menu mobilnego
+    // Wyłącz obsługę menu mobilnego dla załadowanych dynamicznie treści
+    // Menu jest już obsługiwane przez główne skrypty strony
 }
 
 /**

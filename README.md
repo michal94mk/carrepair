@@ -54,6 +54,10 @@ A modern, responsive website for "Car Repair" auto service shop, built with clea
 │   ├── gallery.php        # Gallery
 │   ├── contact.php        # Contact
 │   └── send_form.php      # Form handler
+├── tests/                 # Test files
+│   ├── FunctionsTest.php  # Tests for helper functions
+│   ├── ContactFormTest.php# Tests for form validation
+│   └── Setup/             # Test helpers
 ├── index.php              # Entry file
 └── README.md              # Documentation
 ```
@@ -91,6 +95,27 @@ Main scripts are in `js/main.js` with the following functionality:
 - Smooth scrolling
 - Gallery filtering and modal controls
 - Mobile navigation handling
+
+### Testing
+
+The project includes basic PHP tests:
+
+- Unit tests for helper functions
+- Integration tests for form validation
+
+To run the tests:
+
+1. Install dependencies:
+```bash
+composer install
+```
+
+2. Run the tests:
+```bash
+vendor/bin/phpunit
+```
+
+For more details about testing, check the `tests/README.md` file.
 
 ## Performance Optimizations
 

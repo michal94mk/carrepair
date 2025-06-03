@@ -59,7 +59,7 @@
     <div class="row align-items-center flex-row-reverse mb-5">
       <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
         <div class="position-relative">
-          <img src="images/test1.jpg" alt="Our History" class="img-fluid rounded shadow-lg">
+          <img src="images/gallery9.jpg" alt="Our History" class="img-fluid rounded shadow-lg">
           <div class="bg-white p-4 shadow position-absolute bottom-0 end-0 translate-middle-y rounded" style="max-width: 60%;">
             <h5 class="fw-bold mb-2">From humble beginnings</h5>
             <p class="mb-0 small">Started as a small garage in 2008, we've expanded to become a full-service auto repair center.</p>
@@ -95,13 +95,13 @@
     <div class="row align-items-center mb-5">
       <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
         <div class="bg-light p-4 rounded shadow-sm">
-          <img src="images/test1.jpg" alt="Our Team" class="img-fluid rounded mb-4">
+          <img src="images/gallery10.jpg" alt="Our Team" class="img-fluid rounded mb-4">
           <div class="row g-3">
             <div class="col-6">
-              <img src="images/test1.jpg" alt="Team Member" class="img-fluid rounded">
+              <img src="images/aboutus.jpg" alt="Team Member" class="img-fluid rounded">
             </div>
             <div class="col-6">
-              <img src="images/test1.jpg" alt="Team Member" class="img-fluid rounded">
+              <img src="images/aboutus.jpg" alt="Team Member" class="img-fluid rounded">
             </div>
           </div>
         </div>

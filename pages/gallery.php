@@ -30,8 +30,8 @@
       <!-- Gallery Item 1 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Workshop Area">
-            <img src="images/test1.jpg" alt="Workshop Area" class="img-fluid gallery-img w-100">
+          <a href="images/gallery1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery1.jpg" data-title="Workshop Area">
+            <img src="images/gallery1.jpg" alt="Workshop Area" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Workshop Area</h5>
               <p class="text-white-50 small mb-0">Our main service area with modern equipment</p>
@@ -43,8 +43,8 @@
       <!-- Gallery Item 2 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Engine Overhaul">
-            <img src="images/test1.jpg" alt="Engine Overhaul" class="img-fluid gallery-img w-100">
+          <a href="images/gallery2.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery2.jpg" data-title="Engine Overhaul">
+            <img src="images/gallery2.jpg" alt="Engine Overhaul" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Engine Overhaul</h5>
               <p class="text-white-50 small mb-0">Complete engine rebuild service</p>
@@ -56,8 +56,8 @@
       <!-- Gallery Item 3 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="results">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Finished Project">
-            <img src="images/test1.jpg" alt="Finished Project" class="img-fluid gallery-img w-100">
+          <a href="images/gallery3.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery3.jpg" data-title="Finished Project">
+            <img src="images/gallery3.jpg" alt="Finished Project" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Finished Project</h5>
               <p class="text-white-50 small mb-0">Customer's car after complete restoration</p>
@@ -69,8 +69,8 @@
       <!-- Gallery Item 4 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Workshop Panorama">
-            <img src="images/test1.jpg" alt="Workshop Panorama" class="img-fluid gallery-img w-100">
+          <a href="images/gallery4.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery4.jpg" data-title="Workshop Panorama">
+            <img src="images/gallery4.jpg" alt="Workshop Panorama" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <div class="d-flex align-items-center">
                 <span class="badge bg-primary me-2">Featured</span>
@@ -85,8 +85,8 @@
       <!-- Gallery Item 5 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Brake System Repair">
-            <img src="images/test1.jpg" alt="Brake System Repair" class="img-fluid gallery-img w-100">
+          <a href="images/gallery5.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery5.jpg" data-title="Brake System Repair">
+            <img src="images/gallery5.jpg" alt="Brake System Repair" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Brake System Repair</h5>
               <p class="text-white-50 small mb-0">Installation of high-performance brake components</p>
@@ -98,8 +98,8 @@
       <!-- Gallery Item 6 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="results">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Paint Job">
-            <img src="images/test1.jpg" alt="Paint Job" class="img-fluid gallery-img w-100">
+          <a href="images/gallery6.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery6.jpg" data-title="Paint Job">
+            <img src="images/gallery6.jpg" alt="Paint Job" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Paint Job</h5>
               <p class="text-white-50 small mb-0">Custom paint finish after collision repair</p>
@@ -111,8 +111,8 @@
       <!-- Gallery Item 7 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="workshop">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Diagnostic Equipment">
-            <img src="images/test1.jpg" alt="Diagnostic Equipment" class="img-fluid gallery-img w-100">
+          <a href="images/gallery7.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery7.jpg" data-title="Diagnostic Equipment">
+            <img src="images/gallery7.jpg" alt="Diagnostic Equipment" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Diagnostic Equipment</h5>
               <p class="text-white-50 small mb-0">State-of-the-art diagnostic tools</p>
@@ -124,8 +124,8 @@
       <!-- Gallery Item 8 -->
       <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-category="repairs">
         <div class="gallery-card position-relative overflow-hidden rounded shadow-sm">
-          <a href="images/test1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/test1.jpg" data-title="Engine Diagnostics">
-            <img src="images/test1.jpg" alt="Engine Diagnostics" class="img-fluid gallery-img w-100">
+          <a href="images/gallery8.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/gallery8.jpg" data-title="Engine Diagnostics">
+            <img src="images/gallery8.jpg" alt="Engine Diagnostics" class="img-fluid gallery-img w-100">
             <div class="gallery-overlay d-flex flex-column justify-content-end p-3">
               <h5 class="text-white mb-1">Engine Diagnostics</h5>
               <p class="text-white-50 small mb-0">Performing advanced engine performance analysis</p>

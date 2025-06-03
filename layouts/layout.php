@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo SITE_DESCRIPTION; ?>">
     <title><?php echo SITE_TITLE; ?></title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon-simple.svg">
+    <link rel="alternate icon" href="images/favicon.svg">
+    <link rel="mask-icon" href="images/favicon-simple.svg" color="#007bff">
+    <meta name="theme-color" content="#007bff">
+    <meta name="msapplication-TileColor" content="#007bff">
+    <meta name="application-name" content="Car Repair">
+    <meta name="apple-mobile-web-app-title" content="Car Repair">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->

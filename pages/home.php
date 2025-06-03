@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="images/car1.jpg" class="d-block w-100 c-img" alt="Car Repair">
+      <img src="images/car2.jpg" class="d-block w-100 c-img" alt="Car Repair">
       <div class="carousel-caption">
         <h5>Experienced Mechanics</h5>
         <p>Our specialists have many years of experience in repairing various vehicle brands.</p>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-    <img src="images/car1.jpg" class="d-block w-100 c-img" alt="Car Service">
+    <img src="images/car3.jpg" class="d-block w-100 c-img" alt="Car Service">
       <div class="carousel-caption">
         <h5>Modern Equipment</h5>
         <p>We use the latest technologies and diagnostic equipment.</p>
@@ -95,7 +95,7 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/test1.jpg" class="card-img-top" alt="Mechanical Repairs">
+                    <img src="images/mechanical.jpg" class="card-img-top" alt="Mechanical Repairs">
                     <div class="card-body text-center">
                         <h4 class="card-title">Mechanical Repairs</h4>
                         <p class="card-text">Fault diagnosis, engine repairs, gearbox repairs, suspension, brake systems, steering systems.</p>
@@ -104,7 +104,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/test1.jpg" class="card-img-top" alt="Maintenance and Servicing">
+                    <img src="images/maintenance.jpg" class="card-img-top" alt="Maintenance and Servicing">
                     <div class="card-body text-center">
                         <h4 class="card-title">Maintenance and Servicing</h4>
                         <p class="card-text">Regular maintenance and servicing of vehicles and machinery, including oil changes, filter replacements.</p>
@@ -113,7 +113,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/test1.jpg" class="card-img-top" alt="Technical Advice">
+                    <img src="images/advice.jpg" class="card-img-top" alt="Technical Advice">
                     <div class="card-body text-center">
                         <h4 class="card-title">Technical Advice</h4>
                         <p class="card-text">Providing customers with technical advice on maintenance, repairs, upgrades, and optimization.</p>
@@ -137,17 +137,17 @@
         <div class="row g-3">
             <div class="col-6 col-md-4">
                 <div class="card border-0 overflow-hidden">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery image 1">
+                    <img src="images/gallery1.jpg" class="img-fluid" alt="Gallery image 1">
                 </div>
             </div>
             <div class="col-6 col-md-4">
                 <div class="card border-0 overflow-hidden">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery image 2">
+                    <img src="images/gallery2.jpg" class="img-fluid" alt="Gallery image 2">
                 </div>
             </div>
             <div class="col-6 col-md-4">
                 <div class="card border-0 overflow-hidden">
-                    <img src="images/test1.jpg" class="img-fluid" alt="Gallery image 3">
+                    <img src="images/gallery3.jpg" class="img-fluid" alt="Gallery image 3">
                 </div>
             </div>
         </div>

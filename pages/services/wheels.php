@@ -9,7 +9,7 @@
 
         <div class="row mb-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="../images/test1.jpg" alt="Wheel and Tire Service" class="img-fluid rounded shadow">
+                <img src="../images/wheels.jpg" alt="Wheel and Tire Service" class="img-fluid rounded shadow">
             </div>
             <div class="col-lg-6">
                 <h3 class="mb-4">Our Wheel and Tire Services</h3>
@@ -93,7 +93,7 @@
                             <div class="accordion-body">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 mb-3 mb-md-0">
-                                        <img src="../images/test1.jpg" alt="Wheel Alignment" class="img-fluid rounded">
+                                        <img src="../images/wheels.jpg" alt="Wheel Alignment" class="img-fluid rounded">
                                     </div>
                                     <div class="col-md-8">
                                         <p>Wheel alignment adjusts the angles of your wheels to manufacturer specifications. Proper wheel alignment extends tire life, ensures the vehicle tracks straight and true, and maximizes fuel efficiency.</p>
@@ -113,7 +113,7 @@
                             <div class="accordion-body">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 mb-3 mb-md-0">
-                                        <img src="../images/test1.jpg" alt="Wheel Balancing" class="img-fluid rounded">
+                                        <img src="../images/wheels.jpg" alt="Wheel Balancing" class="img-fluid rounded">
                                     </div>
                                     <div class="col-md-8">
                                         <p>Wheel balancing ensures that weight is distributed equally around the entire circumference of the wheel and tire assembly. This prevents vibration and premature wear on tires, bearings, and suspension components.</p>
@@ -133,7 +133,7 @@
                             <div class="accordion-body">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 mb-3 mb-md-0">
-                                        <img src="../images/test1.jpg" alt="Tire Rotation" class="img-fluid rounded">
+                                        <img src="../images/wheels.jpg" alt="Tire Rotation" class="img-fluid rounded">
                                     </div>
                                     <div class="col-md-8">
                                         <p>Tire rotation involves changing the position of your vehicle's tires to ensure even wear. This service is crucial because front and rear tires wear differently due to steering, braking, and driving forces.</p>

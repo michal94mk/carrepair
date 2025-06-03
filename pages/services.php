@@ -17,7 +17,7 @@
                 <a href="<?php echo url('services/mechanical'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Mechanical Repairs">
+                            <img src="images/mechanical.jpg" class="card-img-top service-img" alt="Mechanical Repairs">
                             <div class="card-img-overlay d-flex align-items-end">
                                 <span class="badge bg-primary p-2 mb-2">Most Popular</span>
                             </div>
@@ -39,7 +39,7 @@
                 <a href="<?php echo url('services/maintenance'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Maintenance and Servicing">
+                            <img src="images/maintenance.jpg" class="card-img-top service-img" alt="Maintenance and Servicing">
                         </div>
                         <div class="card-body text-center">
                             <div class="service-icon bg-light mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center">
@@ -58,7 +58,7 @@
                 <a href="<?php echo url('services/advice'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Technical Advice">
+                            <img src="images/advice.jpg" class="card-img-top service-img" alt="Technical Advice">
                         </div>
                         <div class="card-body text-center">
                             <div class="service-icon bg-light mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center">
@@ -77,7 +77,7 @@
                 <a href="<?php echo url('services/electrical'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Electrical System Repairs">
+                            <img src="images/electrical.jpg" class="card-img-top service-img" alt="Electrical System Repairs">
                         </div>
                         <div class="card-body text-center">
                             <div class="service-icon bg-light mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center">
@@ -96,7 +96,7 @@
                 <a href="<?php echo url('services/airconditioning'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Air Conditioning Service">
+                            <img src="images/airconditioning.jpg" class="card-img-top service-img" alt="Air Conditioning Service">
                         </div>
                         <div class="card-body text-center">
                             <div class="service-icon bg-light mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center">
@@ -115,7 +115,7 @@
                 <a href="<?php echo url('services/wheels'); ?>" class="text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm service-card">
                         <div class="card-img-wrapper overflow-hidden">
-                            <img src="images/test1.jpg" class="card-img-top service-img" alt="Wheel and Tire Service">
+                            <img src="images/wheels.jpg" class="card-img-top service-img" alt="Wheel and Tire Service">
                         </div>
                         <div class="card-body text-center">
                             <div class="service-icon bg-light mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center">

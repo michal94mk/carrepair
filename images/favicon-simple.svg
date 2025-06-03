@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <defs>
+    <style>
+      .bg { fill: #007bff; }
+      .car { fill: #ffffff; }
+      .tool { fill: #ffc107; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="16" height="16" rx="2" class="bg"/>
+  
+  <!-- Simple car icon -->
+  <path d="M3 10h10c.5 0 1-.5 1-1V7c0-.3-.1-.5-.3-.7l-1-.8c-.1-.1-.3-.2-.5-.2H4.8c-.2 0-.4.1-.5.2l-1 .8c-.2.2-.3.4-.3.7v2c0 .5.5 1 1 1z" class="car"/>
+  
+  <!-- Car wheels -->
+  <circle cx="5.5" cy="11.5" r="1" class="car"/>
+  <circle cx="10.5" cy="11.5" r="1" class="car"/>
+  
+  <!-- Simple wrench -->
+  <rect x="11" y="3" width="1" height="3" rx="0.2" class="tool"/>
+  <circle cx="11.5" cy="3.5" r="0.8" fill="none" stroke="#ffc107" stroke-width="0.3"/>
+</svg> 

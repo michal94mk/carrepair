@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      .cls-1 { fill: #007bff; }
+      .cls-2 { fill: #ffffff; }
+      .cls-3 { fill: #ffc107; }
+    </style>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" class="cls-1"/>
+  
+  <!-- Car silhouette -->
+  <path d="M8 18h16c1.1 0 2-.9 2-2v-4c0-.6-.2-1.1-.6-1.4l-2-1.6c-.3-.2-.7-.4-1.1-.4H9.7c-.4 0-.8.2-1.1.4l-2 1.6c-.4.3-.6.8-.6 1.4v4c0 1.1.9 2 2 2z" class="cls-2"/>
+  
+  <!-- Car windows -->
+  <rect x="10" y="12" width="4" height="3" rx="0.5" class="cls-1"/>
+  <rect x="18" y="12" width="4" height="3" rx="0.5" class="cls-1"/>
+  
+  <!-- Car wheels -->
+  <circle cx="11" cy="20" r="2" class="cls-2"/>
+  <circle cx="21" cy="20" r="2" class="cls-2"/>
+  <circle cx="11" cy="20" r="1" class="cls-1"/>
+  <circle cx="21" cy="20" r="1" class="cls-1"/>
+  
+  <!-- Wrench -->
+  <path d="M20 8l-1.5 1.5 1 1L21 9c.3-.3.3-.7 0-1s-.7-.3-1 0z" class="cls-3"/>
+  <rect x="19" y="9" width="1" height="4" rx="0.2" transform="rotate(45 19.5 11)" class="cls-3"/>
+</svg> 

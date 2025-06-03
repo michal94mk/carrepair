@@ -9,7 +9,7 @@
 
         <div class="row mb-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="../images/test1.jpg" alt="Maintenance and Servicing" class="img-fluid rounded shadow">
+                <img src="../images/maintenance.jpg" alt="Maintenance and Servicing" class="img-fluid rounded shadow">
             </div>
             <div class="col-lg-6">
                 <h3 class="mb-4">Our Maintenance Services</h3>
